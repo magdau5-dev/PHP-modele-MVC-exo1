@@ -1,5 +1,15 @@
 <?php
+
 while (true) {
     $line = readline("Entrez votre commande : ");
-    echo "Vous avez saisi : $line\n";
+    $command = strtolower(trim($line));
+
+    if ($command === "list") {
+        echo "$command tapé, affichage de la liste\n";
+    } elseif ($command === "exit") {
+        echo "Fermeture du programme.\n";
+        break;
+    } else {
+        echo "Commande inconnue : $line\n";
+    }
 }
