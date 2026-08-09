@@ -1,4 +1,10 @@
 <?php
+require 'bdd/connexion.php';
+
+$dbConnect = new DBConnect();
+$pdo = $dbConnect->getPDO();
+
+var_dump($pdo);
 
 while (true) {
     $line = readline("Entrez votre commande : ");
