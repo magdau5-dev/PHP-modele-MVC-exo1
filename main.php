@@ -1,5 +1,5 @@
 <?php
-require 'bdd/connexion.php';
+require 'bdd/Connexion.php';
 
 $dbConnect = new DBConnect();
 $pdo = $dbConnect->getPDO();
