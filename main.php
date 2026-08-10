@@ -4,6 +4,8 @@ require __DIR__ . '/Command.php';
 
 $commandManager = new Command();
 
+//preg_match() vérifie si une chaîne correspond à un motif existant et si le motif est existant alors il permet de continuer l'exécution du code. 
+
 while (true) {
 
     $line = trim(readline("Entrez votre commande : "));
@@ -12,6 +14,9 @@ while (true) {
 
     if ($command === "list") { 
         $commandManager->list();// Call de la méthode list() de la classe Command si la commande tapée est "list"
+
+    } elseif ($command === "help") {
+        $commandManager->help(); // Call de la méthode help() de la classe Command si la commande tapée est "help"
 
     } elseif ($command === "detail") {
         echo "Veuillez préciser un ID. Exemple : detail 2\n";

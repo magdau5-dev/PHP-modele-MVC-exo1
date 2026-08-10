@@ -4,6 +4,17 @@ require __DIR__ . '/ContactManager.php';
 
 class Command
 {
+    function help(): void
+    {
+        echo "Commandes disponibles :\n";
+        echo "'list' : affiche tous les contacts\n";
+        echo "'detail ID' : affiche un contact\n";
+        echo "'create Nom,email,téléphone' : renseignez les informations du contact à créer\n";
+        echo "'delete ID' : supprime un contact\n";
+        echo "'help' : affiche toute les commandes disponibles\n";
+        echo "'exit' : ferme le programme\n";
+    }
+
     function list(): void
     {
         echo "Commande 'list' tapée, affichage de la liste des contacts ci-dessous :\n";
