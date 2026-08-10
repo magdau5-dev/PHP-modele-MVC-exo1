@@ -26,7 +26,7 @@ class ContactManager
             $contacts[] = $contact;
         }
 
-        var_dump($contacts);
+        // var_dump($contacts);
 
         return $contacts;
     }
